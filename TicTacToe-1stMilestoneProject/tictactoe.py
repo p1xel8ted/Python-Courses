@@ -1,6 +1,7 @@
 """This method is used to create a new one .
 """
 
+
 def print_board(board):
     """print a board
 
