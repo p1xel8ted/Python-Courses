@@ -1,3 +1,6 @@
+"""
+A card class.
+"""
 suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
 ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine',
          'Ten', 'Jack', 'Queen', 'King', 'Ace')
@@ -7,11 +10,19 @@ values = {'Two': 2, 'Three': 3, 'Four': 4, 'Five': 5, 'Six': 6, 'Seven': 7,
 
 
 class Card:
-
+    """
+    A card class.
+    """
     def __init__(self, suit, rank):
         self.suit = suit
         self.rank = rank
         self.value = values[rank]
 
     def __str__(self) -> str:
+        """
+        Returns the card as a string.
+
+        Returns:
+            str: Two of Hearts
+        """
         return f"{self.rank} of {self.suit}"
